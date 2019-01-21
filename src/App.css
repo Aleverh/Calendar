@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.event {
+    max-width: 200px;
+    background: #E2ECF5;
+    border-left: 3px solid #6E9ECF;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+:root {
+    padding: 20px;
+}
+
+.calendar_board {
+    max-width: 250px;
+    position: relative;
+}
+
+.calendar_board-hour {
+    padding-top: 0;
+    border-top: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.calendar_board-half-hour {
+    font-size: 12px;
+}
+
+.board-hours {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    height: 60px;
+}
+
+.event_container {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.new_event__container {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.event i {
+    display: none;
+    position: absolute;
+    color: red;
+    top: 0;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.event:hover > i {
+    display: block;
+}
+
+.event:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
